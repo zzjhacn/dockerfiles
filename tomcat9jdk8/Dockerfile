@@ -83,6 +83,7 @@ RUN set -e \
 	fi
 
 RUN apk add curl
+RUN apk add graphviz
 
 RUN set -e \
 	&& sed -i 's/8080/80/g' /usr/local/tomcat/conf/server.xml \
